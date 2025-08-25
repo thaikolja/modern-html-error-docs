@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="406 Not Acceptable - Oops! The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>406 - Not Acceptable</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/js/scripts.js" defer></script>
+</head>
+<body>
+<div class="giant-404" aria-hidden="true">406</div>
+<div class="floating-elements"></div>
+<main class="main-content" aria-label="406 Error Page">
+    <section class="centered-box">
+        <div class="robot-container" aria-label="Error Robot Illustration">
+            <div class="robot-dot"></div>
+            <div class="robot-square"></div>
+            <picture style="position:relative;z-index:10;">
+                <source srcset="./assets/img/robot-yellow.avif" type="image/avif">
+                <source srcset="./assets/img/robot-yellow.webp" type="image/webp">
+                <img src="./assets/img/robot-yellow.png" alt="Error Robot illustration" class="robot-img" loading="lazy" decoding="async">
+            </picture>
+            <div class="speech-bubble-container">
+                <div class="speech-bubble" aria-label="Error Message">
+                    <span class="speech-bubble-text" data-message-key="robot_speech">
+                    I can't give you what you want. My apologies.
+                    </span> <span class="speech-bubble-tail"></span>
+                </div>
+            </div>
+        </div>
+        <div class="space-y-6">
+            <h1 class="error-title" data-message-key="title">Not Acceptable</h1>
+            <div class="error-message">
+                <p class="main" data-message-key="main_message">
+                    The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.
+                </p>
+                <p class="sub" data-message-key="sub_message">
+                    This robot is unable to fulfill your request. Please try again with different accept headers.
+                </p>
+            </div>
+            <nav class="action-buttons" aria-label="Error Page Actions">
+                <button class="btn btn-back" onclick="window.history.back()" aria-label="Go Back">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Go Back
+                </button>
+                <button class="btn btn-home" onclick="window.location.href='/'" aria-label="Go Home">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011
+ 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Home
+                </button>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

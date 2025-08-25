@@ -1,0 +1,100 @@
+{
+  "400": {
+    "title":            "Request: Utter Nonsense",
+    "meta_description": "400 Bad Request - Clearly, you've sent something the server considers an insult to its intelligence.",
+    "robot_speech":     "My circuits are currently processing the sheer audacity of your request. Please, try to formulate a coherent thought next time.",
+    "main_message":     "The server has politely, or perhaps not so politely, informed us that your request makes no sense whatsoever.",
+    "sub_message":      "This robot is confused. Please check your request and try again."
+  },
+  "401": {
+    "title":            "Access Denied",
+    "meta_description": "401 Unauthorized - Oh, how quaint. You thought you could just waltz in here?",
+    "robot_speech":     "Authentication failed. Did you really expect that to work? How adorable.",
+    "main_message":     "You lack the necessary credentials to grace this page with your presence. Perhaps try a different life choice?",
+    "sub_message":      "This robot is checking credentials. Please go back and try to login."
+  },
+  "403": {
+    "title":            "Access Forbidden",
+    "meta_description": "403 Forbidden - This page is not for you. It's not us, it's definitely you.",
+    "robot_speech":     "Access denied. This digital velvet rope is firmly in place for your kind.",
+    "main_message":     "You are explicitly forbidden from viewing this page. Consider it a personal slight from the server.",
+    "sub_message":      "This robot is guarding this page. Please go back and try a different link."
+  },
+  "404": {
+    "title":            "Page: Poof! Gone Forever",
+    "meta_description": "404 Page Not Found - The page you're looking for has vanished into the digital void, much like your hopes and dreams.",
+    "robot_speech":     "Another one bites the dust. The page you sought has achieved true non-existence. Impressive, really.",
+    "main_message":     "The page you're looking for has vanished into the digital void. Perhaps it was never truly here, or perhaps you just imagined it.",
+    "sub_message":      "This robot is here to remind you that sometimes things just don't work out."
+  },
+  "405": {
+    "title":            "Wrong Method, Genius",
+    "meta_description": "405 Method Not Allowed - You've used the wrong method. Did you even read the manual?",
+    "robot_speech":     "That's not how we do things around here. Try a different approach, preferably one that makes sense.",
+    "main_message":     "The method you've employed is utterly unacceptable for this resource. It's like bringing a spoon to a knife fight.",
+    "sub_message":      "This robot is confused by your request. Please try again with a different method."
+  },
+  "406": {
+    "title":            "Your Headers Suck",
+    "meta_description": "406 Not Acceptable - Your 'Accept' headers are an affront to our sensibilities. We simply can't deal with you.",
+    "robot_speech":     "Your preferences are not compatible with our superior standards. Adjust your expectations, human.",
+    "main_message":     "The server finds your request's 'Accept' headers... well, unacceptable. We're just not compatible.",
+    "sub_message":      "This robot is unable to fulfill your request. Please try again with different accept headers."
+  },
+  "407": {
+    "title":            "Authenticate, Peasant",
+    "meta_description": "407 Proxy Authentication Required - You need to authenticate with the proxy. Don't look at us, we just work here.",
+    "robot_speech":     "The gatekeeper demands tribute. Authenticate with the proxy, or remain in digital purgatory.",
+    "main_message":     "The proxy, in its infinite wisdom, requires authentication. Don't blame us, we're just relaying the message.",
+    "sub_message":      "This robot is guarding the proxy. Please authenticate and try again."
+  },
+  "412": {
+    "title":            "You Failed The Test",
+    "meta_description": "412 Precondition Failed - Your conditions were found wanting. Pathetic.",
+    "robot_speech":     "Your preconditions were evaluated and found to be... lacking. Try harder next time.",
+    "main_message":     "One or more of your request's preconditions utterly failed. It's almost impressive how wrong you were.",
+    "sub_message":      "This robot is unable to proceed. Please check your request and try again."
+  },
+  "414": {
+    "title":            "URI Too Long, Idiot",
+    "meta_description": "414 Request-URI Too Long - Did you write a novel in the URL? We're not reading that.",
+    "robot_speech":     "My processing unit just laughed at the length of your URI. Please, exercise some brevity.",
+    "main_message":     "The server refuses to process your request because your URI is longer than its patience.",
+    "sub_message":      "This robot is overwhelmed. Please shorten your request and try again."
+  },
+  "415": {
+    "title":            "Unsupported Media",
+    "meta_description": "415 Unsupported Media Type - Your media type is not supported. Get with the program.",
+    "robot_speech":     "This format is beneath us. Kindly provide something we actually understand.",
+    "main_message":     "The server finds your request's media type utterly unsupported. It's not us, it's your archaic choices.",
+    "sub_message":      "This robot is unable to process your request. Please try again with a supported media type."
+  },
+  "500": {
+    "title":            "We Broke It. Probably.",
+    "meta_description": "500 Internal Server Error - Something went catastrophically wrong on our end. Don't worry, it's probably not your fault... this time.",
+    "robot_speech":     "My internal components are currently engaged in a philosophical debate about the meaning of existence. Please wait for the inevitable conclusion.",
+    "main_message":     "Congratulations, you've managed to trigger an internal server error. We're just as surprised as you are, possibly more annoyed.",
+    "sub_message":      "This robot is having a bad day. Please try again later."
+  },
+  "501": {
+    "title":            "We Didn't Bother",
+    "meta_description": "501 Not Implemented - The server simply doesn't support that functionality. What did you expect?",
+    "robot_speech":     "That feature? Oh, we haven't gotten around to implementing that. Maybe next century.",
+    "main_message":     "The server, in its infinite wisdom, has decided not to implement the functionality required for your request. Tough luck.",
+    "sub_message":      "This robot is still learning. Please try again later."
+  },
+  "502": {
+    "title":            "Not Our Fault",
+    "meta_description": "502 Bad Gateway - It wasn't us! It was the other server. Always blame the other server.",
+    "robot_speech":     "My upstream colleague is currently having a digital meltdown. I'm just the messenger of bad news.",
+    "main_message":     "The server received an invalid response from an upstream server. We're just the innocent bystander in this digital drama.",
+    "sub_message":      "This robot is having network issues. Please try again later."
+  },
+  "503": {
+    "title":            "Go Away, We're Down",
+    "meta_description": "503 Service Unavailable - The server is currently indisposed. Don't call us, we'll call you.",
+    "robot_speech":     "I'm currently undergoing a much-needed nap, or perhaps a critical system update. Either way, I'm unavailable.",
+    "main_message":     "The server is currently unable to handle your request, likely due to a temporary overload or scheduled maintenance. Go bother someone else.",
+    "sub_message":      "This robot is taking a break. Please try again later."
+  }
+}
