@@ -1,8 +1,8 @@
 # Modern HTML Error Docs
 
-![License](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub Stars](https://img.shields.io/github/stars/thaikolja/html-error-docs.svg?style=flat) ![GitHub Forks](https://img.shields.io/github/forks/YOUR_USERNAME/YOUR_REPOSITORY.svg?style=flat)
+![GitHub Release](https://img.shields.io/github/v/release/thaikolja/modern-html-error-docs?include_prereleases&display_name=release&style=flat&color=light-blue&link=https%3A%2F%2Fgithub.com%2Fthaikolja%2Fmodern-html-error-docs) ![GitHub forks](https://img.shields.io/github/forks/thaikolja/modern-html-error-docs?style=flat) ![GitHub Repo stars](https://img.shields.io/github/stars/thaikolja/modern-html-error-docs?style=flat&color=dark-green) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A collection of modern, responsive, and brandable HTML error pages (e.g., 404, 500) designed to turn frustrating moments into memorable, on-brand experiences—with optional doses (customizable) of sarcasm, irony, and humor. Built for teams that want simple customization and a clean structure for deploying custom error docs across their web servers.
+A collection of modern, responsive, and brandable [HTML error pages](https://www.presslabs.com/how-to/error-pages/) (e.g., `404`, `500`) designed to turn frustrating moments into memorable, on-brand experiences—with an optional dose (customizable) of sarcasm, irony, and humor. Built for server administrators who are bored with the default Apache/Nginx error docs. This repository is hosted on [GitLab](https://gitlab.com/thaikolja/modern-html-error-docs) and mirrored to [GitHub](https://github.com/thaikolja/modern-html-error-docs).
 
 **Example for the error code 503:**
 
@@ -10,7 +10,8 @@ A collection of modern, responsive, and brandable HTML error pages (e.g., 404, 5
 
 ## Features
 
--   ⚡️ **Responsive Design:** Optimized for various screen sizes, from mobile devices to large desktops.
+-   ⚡️ **Fast:** Only HTML, a little CSS, and Vanilla JavaScript. No additional tools needed.
+-   📱 **Responsive Design:** Optimized for various screen sizes, from mobile devices to large desktops.
 -   📦 **Single Source of Truth:** All error docs are managed in a central `messages.json` file for easy updates.
 -   🛟 **Fallback Mechanism:** Content is displayed even if JavaScript is disabled in the browser.
 -   🧹 **Organized Structure:** Clear separation of CSS, JavaScript, and image assets.
@@ -20,26 +21,25 @@ A collection of modern, responsive, and brandable HTML error pages (e.g., 404, 5
 
 Although the error docs have been built for Linux servers, please note that the following paths and folders may not be accurate for your specific distribution.
 
-### Prerequisites
+### Requirements
 
 -   A server running Linux
 -   An installed web server, e.g., Apache or Nginx
--   Root access or enough permissions to change default error docs
--   A modern web browser
+-   Access to your server's standard error docs files
 
 ## Installation
 
 > [!NOTE]
 >
-> For both installation versions, a Debian 12 server running Plesk, Apache, and Nginx is used. Some file paths may not be the same with your distribution.
+> For this installation, a Debian 12 server running Plesk, Apache, and Nginx is used. Some file paths may differ from those in your distribution.
 
-### Built Installation
+### Install from Build
 
-Already built version that only has to be moved to the server.
+An **already built version** with minified assets and only the necessary files that need to be moved to the server.
 
-1. Log in to your server as the root user
+1. Use SSH to log in to your server as a user with enough permission (see: "Requirements")
 
-2. Change into the directory where the error message files are being stored:
+2. Change into the directory where the error message files are being stored. In this case, it's the following directory for **new domains**. Already existing domains are located in `/var/www/vhosts/DOMAIN.COM/error-docs`.
 
    ```bash
    cd /var/www/vhosts/.skel/0
@@ -51,7 +51,7 @@ Already built version that only has to be moved to the server.
    zip -r error-docs-backup.zip error_docs
    ```
 
-4. Use `curl` or `wget` to download the built files as a .zip archive:
+4. Head to the "Release" section on GitLab or GitHub and copy the URL of the latest version's .zip file:
 
    ```bash
    # Using wget
@@ -64,16 +64,16 @@ Already built version that only has to be moved to the server.
 5. Unzip the downloaded file `main.zip`:
 
    ```bash
-   unzip main.zip
+   unzip dist.zip
    ```
 
-6. Delete the folder `error-docs` and rename your extracted `main`:
+6. Backup your existing default `error-docs` and rename your extracted `dist`:
 
    ```bash
-   rm -r error-docs && mv main error-docs
+   mv error-docs ./error-docs_backup && mv dist error-docs
    ```
 
-7. `cd` into `error-docs` and use `ls -la`. You should see the following file structure:
+7. `cd` into `error-docs` and use `ls -l` (or `tree`, if available). You should see the following file structure:
 
    ```bash
    ├── assets
@@ -123,9 +123,22 @@ Already built version that only has to be moved to the server.
 
 10. 🥳 Your Modern HTML Error Docs are successfully installed!
 
+### Via Git
+
+1. Clone the main repository with unminified codes:
+
+   ```bash
+   ```
+
+2. Apply your changes.
+
+3. Clea
+
 ## Customization
 
-### Error docs
+### Messages and Texts
+
+These error docs 
 
 All error docs are stored in `assets/data/docs.json`. You can edit this file to change the titles, descriptions, and robot speech for each error code.
 
@@ -153,6 +166,12 @@ Replace or add new robot images in the `assets/img/` directory. Ensure you updat
 ### JavaScript
 
 The `assets/js/scripts.js` file handles the dynamic loading of docs from `docs.json` and can be extended for additional client-side functionality.
+
+## What's Next
+
+* Creating a way of easier deployment
+* Accurate Linux distribution determination
+* Expanding `README.md` for the most used Linux distributions
 
 ## Contributing
 
