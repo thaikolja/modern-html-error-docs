@@ -64,6 +64,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.warn(`No message data found for error code: ${errorCode}`);
     }
   } catch (error) {
-    console.error('Error loading or parsing messages.json:', error);
+    console.error('Error loading or parsing messages.json: ', error);
   }
 });
